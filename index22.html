@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-list.css">
+    <title>Search Courses</title>
+   
+</head>
+<body>
+   
+    <div class="Espaco-button-input">
+        <input placeholder="Pesquisar" type="text" id="searchInput" style="caret-color: red;" onkeydown="handleKeyDown(event)">
+        <button class="search-button" onclick="search()">Pesquisar</button>
+    </div>
+    
+    <div class="space-button-filter">
+        <div class="space-button-filter-fix">
+<button class="button-filter-type filter-type-licenciatura" onclick="filtrarPorId('licenciatura')">Licenciatura</button>
+<button class="button-filter-type filter-type-bacharelado" onclick="filtrarPorId('bacharelado')">Bacharelado</button>
+<button class="button-filter-type filter-type-tecnologo" onclick="filtrarPorId('tecnologo')">tecnologo</button>
+</div>
+</div>
+<div class="doido">
+<button onclick="filtrarPorClasse('a')">a</button>
+<button onclick="filtrarPorClasse('b')">b</button>
+<button onclick="filtrarPorClasse('c')">c</button>
+<button onclick="filtrarPorClasse('d')">d</button>
+<button onclick="filtrarPorClasse('e')">e</button>
+<button onclick="filtrarPorClasse('f')">f</button>
+<button onclick="filtrarPorClasse('g')">g</button>
+<button onclick="filtrarPorClasse('h')">h</button>
+<button onclick="filtrarPorClasse('i')">i</button>
+<button onclick="filtrarPorClasse('j')">j</button>
+<button onclick="filtrarPorClasse('k')">k</button>
+<button onclick="filtrarPorClasse('l')">l</button>
+<button onclick="filtrarPorClasse('m')">m</button>
+<button onclick="filtrarPorClasse('n')">n</button>
+<button onclick="filtrarPorClasse('o')">o</button>
+<button onclick="filtrarPorClasse('p')">p</button>
+<button onclick="filtrarPorClasse('q')">q</button>
+<button onclick="filtrarPorClasse('r')">r</button>
+<button onclick="filtrarPorClasse('s')">s</button>
+<button onclick="filtrarPorClasse('t')">t</button>
+<button onclick="filtrarPorClasse('u')">u</button>
+<button onclick="filtrarPorClasse('v')">v</button>
+<button onclick="filtrarPorClasse('w')">w</button>
+<button onclick="filtrarPorClasse('x')">x</button>
+<button onclick="filtrarPorClasse('y')">y</button>
+<button onclick="filtrarPorClasse('z')">z</button>
+</div>
+<div class="text-filter">
+    <p>Clique e filtre os cursos.</p>
+</div>
+<div id="courses">
+
+<!-- Curso 1 -->
+<div class="image-item a" id="tecnologo" >
+   <a href="https://educacao.andrattibrasil.com.br/112-agronegocio" target="_blank" class="modification-curse">  
+
+    <!-- <a href="https://api.whatsapp.com/send?phone=+556286273131&text=Oi! quero o curso de Enfermagem" target="_blank" class="modification-curse">  -->
+        <div class="textnamecourses">
+            <h3>Agronegócio</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+
+</div>
+
+<!-- Curso 2 -->
+<div class="image-item a" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-analise-e-desenvolvimento-de-sistemas"  target="_blank" class="modification-curse" >
+        <div class="textnamecourses">
+            <h3>Análise e Desenvolvimento De Sistemas</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 3 -->
+<div class="image-item a" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-arquitetura-de-dados" class="modification-curse downloadLink" target="_blank">
+
+
+        <div class="textnamecourses">
+            <h3>Arquitetura De Dados</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 4 -->
+<div class="image-item b" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-blockchain-criptomoedas-e-financas" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Blockchain, Criptomoedas e Finanças</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 5 -->
+<div class="image-item c" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-ciberseguranca" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Cibersegurança</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 6 -->
+<div class="image-item c" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-ciencia-de-dados" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Ciência De Dados</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 7 -->
+<div class="image-item c" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-coaching-e-desenvolvimento-humano" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Coaching e Desenvolvimento Humano</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 8 -->
+<div class="image-item c" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-comercio-exterior" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Comércio Exterior</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 9 -->
+<div class="image-item c" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-computacao-em-nuvem" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Computação Em Nuvem</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 10 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-desenvolvimento-back-end" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Desenvolvimento Back-end</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 11 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-desenvolvimento-mobile" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Desenvolvimento Mobile</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 12 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-desenvolvimento-web" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Desenvolvimento Web</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 13 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-design-de-moda" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Design De Moda</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 14 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-design-grafico" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Design Gráfico</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 15 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-design-de-interiores" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Design De Interiores</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 16 -->
+<div class="image-item d" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-devops" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Devops</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 17 -->
+<div class="image-item e" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-empreendedorismo" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Empreendedorismo</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 18 -->
+<div class="image-item e" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-empreendedorismo-e-novos-negocios" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Empreendedorismo E Novos Negócios</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 19 -->
+<div class="image-item e" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-eventos" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Eventos</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 20 -->
+<div class="image-item f" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-fotografia" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Fotografia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 21 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gerontologia" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gerontologia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 22 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-ambiental" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Ambiental</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 23 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-comercial" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Comercial</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 24 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-da-inovacao" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Da Inovação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 25 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-da-producao-industrial" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Da Produção Industrial</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 26 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-da-qualidade" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Da Qualidade</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 27 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-da-tecnologia-da-informacao" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Da Tecnologia Da Informação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 28 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-de-cooperativas" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão De Cooperativas</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 29 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-de-produto" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão De Produto</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 30 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-de-recursos-humanos" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão De Recursos Humanos</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 31 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-de-saude-publica" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão De Saúde Pública</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 32 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-de-turismo" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão De Turismo</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 33 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-financeira" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Financeira</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 34 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-hospitalar" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Hospitalar</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 35 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-portuaria" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Portuária</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 36 -->
+<div class="image-item g" id="tecnologo">
+    <a href="#" class="modification-curse" target="_blank">
+        <div class="textnamecourses">
+            <h3>Gastronomia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 37 -->
+<div class="image-item g" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-gestao-publica" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão Pública</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 38 -->
+<div class="image-item i" id="tecnologo">
+    <a href="#" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Inteligência De Mercado E Análise De Dados</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 39 -->
+<div class="image-item i" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-investigacao-e-pericia-criminal" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Investigação E Perícia Criminal</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 40 -->
+<div class="image-item j" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-jogos-digitais" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Jogos Digitais</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 41 -->
+<div class="image-item l" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-logistica" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Logística</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 42 -->
+<div class="image-item m" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-marketing" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Marketing</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 43 -->
+<div class="image-item m" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-marketing-digital" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Marketing Digital</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 44 -->
+<div class="image-item m" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-mediacao" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Mediação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 45 -->
+<div class="image-item n" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-negocios-imobiliarios" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Negócios Imobiliários</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 46 -->
+<div class="image-item p" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-processos-gerenciais" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Processos Gerenciais</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 47 -->
+<div class="image-item p" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-producao-cervejeira" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Produção Cervejeira</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 48 -->
+<div class="image-item p" id="tecnologo">
+    <a href="#" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Produção Audiovisual</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 49 -->
+<div class="image-item r" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-redes-de-computadores" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Redes De Computadores</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 50 -->
+<div class="image-item s" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-secretariado" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Secretariado</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 51 -->
+<div class="image-item s" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-seguranca-publica" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Segurança Pública (Apenas Concursados)</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 52 -->
+<div class="image-item g" id="tecnologo">
+    <a href="#" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Gestão de Segurança Privada</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 53 -->
+<div class="image-item s" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-servicos-juridicos-cartorarios-e-notariais" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Serviços Jurídicos Cartorários E Notariais</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 54 -->
+<div class="image-item s" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-sistemas-para-internet" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Sistemas Para Internet</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 55 -->
+<div class="image-item s" id="tecnologo">
+    <a href="#" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Segurança da Informação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 56 -->
+<div class="image-item t" id="tecnologo">
+    <a href="https://educacao.andrattibrasil.com.br/112-terapias-integrativas-e-complementares" target="_blank" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Terapias Integrativas E Complementares</h3>
+        </div>
+        <div class="textDuration">
+            <h3>2 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!--BACHARELADOS-->
+<!--BACHARELADOS-->
+<!--BACHARELADOS-->
+<!--BACHARELADOS-->
+<!--BACHARELADOS-->
+
+    <!-- Curso 1 -->
+<div class="image-item a" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-administracao" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Administração</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 2 -->
+<div class="image-item a" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-administracao-publica" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Administração Pública</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 20 -->
+<div class="image-item a" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/site-bacharelado-agronomia-fluxo-110" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Agronomia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 3 -->
+<div class="image-item c" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-ciencias-contabeis" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Ciências Contábeis</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 4 -->
+<div class="image-item c" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-ciencias-economicas" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Ciências Econômicas</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 5 -->
+<div class="image-item c" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/site-bacharelado-ciencia-da-computacao-fluxo-110" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Ciência da Computação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 6 -->
+<div class="image-item c" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-criminologia" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Criminologia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 7 -->
+<div class="image-item d" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Design</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 8 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-enfermagem" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Enfermagem</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 9 -->
+<div class="image-item e" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Educação Física</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 10 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-da-computacao" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Da Computação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 11 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-civil" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Civil</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 12 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-de-producao" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia De Produção</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 13 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-de-software" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia De Software</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 14 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-eletrica" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Elétrica</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 15 -->
+<div class="image-item e" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-engenharia-mecanica" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Mecânica</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 16 -->
+<div class="image-item j" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-jornalismo" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Jornalismo</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 17 -->
+<div class="image-item p" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-publicidade-e-propaganda" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Publicidade e Propaganda</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 18 -->
+<div class="image-item q" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Química</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 19 -->
+<div class="image-item s" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-servico-social" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Serviço Social</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 20 -->
+<div class="image-item s" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Sistemas de Informação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3,5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 21 -->
+<div class="image-item t" id="bacharelado">
+    <a href="https://educacao.andrattibrasil.com.br/110-teologia" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Teologia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 22 -->
+<div class="image-item e" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Sanitária</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 23 -->
+<div class="image-item e" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia Ambiental</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 24 -->
+<div class="image-item e" id="bacharelado">
+    <a href="#" class="modification-curse">
+        <div class="textnamecourses">
+            <h3>Engenharia De Controle E Automação</h3>
+        </div>
+        <div class="textDuration">
+            <h3>5 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 25 -->
+<div class="image-item p" id="bacharelado" >
+    <a href="#" class="modification-curse" >
+        <div class="textnamecourses">
+            <h3>Psicopedagogia</h3>
+        </div>
+        <div class="textDuration">
+            <h3>3 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- Curso 26 -->
+<div class="image-item r" id="bacharelado" >
+    <a href="cursos/Relacoes-internacionais.html" class="modification-curse" >
+        <div class="textnamecourses">
+            <h3>Relações Internacionais</h3>
+        </div>
+        <div class="textDuration">
+            <h3>4 anos</h3>
+        </div>
+    </a>
+</div>
+
+<!--LICENCIATURAS-->
+<!--LICENCIATURAS-->
+<!--LICENCIATURAS-->
+<!--LICENCIATURAS-->
+<!--LICENCIATURAS-->
+
+<!-- Curso 1 -->
+    <div class="image-item a" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-artes-visuais" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Artes Visuais</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 2 -->
+    <div class="image-item e" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-educacao-fisica" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Educação Física</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 3 -->
+    <div class="image-item e" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-educacao-especial" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Educação Especial</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 4 -->
+    <div class="image-item f" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-filosofia" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Filosofia</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 5 -->
+    <div class="image-item g" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-geografia" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Geografia</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 6 -->
+    <div class="image-item h" id="licenciatura" >
+        <a href="https://educacao.andrattibrasil.com.br/111-historia" class="modification-curse" >
+            <div class="textnamecourses">
+            <h3>História</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 7 -->
+    <div class="image-item l" id="licenciatura">
+        <a href="#" class="modification-curse" >
+            <div class="textnamecourses">
+            <h3>Letras - Português</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 8 -->
+    <div class="image-item l" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-letras-portugueseespanhol" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Letras - Português e Espanhol</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 9 -->
+    <div class="image-item l" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-letras-portugues-e-ingles" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Letras - Português e Ingles</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Curso 10 -->
+    <div class="image-item m" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-matematica" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Matemática</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+        <!-- Curso 11 -->
+        <div class="image-item p" id="licenciatura">
+            <a href="https://educacao.andrattibrasil.com.br/111-pedagogia" class="modification-curse">
+                <div class="textnamecourses">
+                <h3>Pedagogia</h3>
+            </div>
+                <div class="textDuration">
+                    <h3>4 anos</h3>
+                </div>
+            </a>
+        </div>
+
+            <!-- Curso 12 -->
+    <div class="image-item s" id="licenciatura">
+        <a href="https://educacao.andrattibrasil.com.br/111-sociologia" class="modification-curse">
+            <div class="textnamecourses">
+            <h3>Sociologia</h3>
+        </div>
+            <div class="textDuration">
+                <h3>4 anos</h3>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+    </script>
+    <script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://kit.fontawesome.com/abaec65dc3.js" crossorigin="anonymous"></script>
+  </body>
+</html>
